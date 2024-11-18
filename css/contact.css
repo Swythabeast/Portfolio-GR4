@@ -1,0 +1,158 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Section d'introduction */
+#intro {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f4f4f4;
+}
+
+#intro h1 {
+    font-size: 3rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Section "À propos" */
+#about {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#about .profile-img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Section des projets */
+#projects {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Section Contact*/
+#contact {
+    padding: 2rem;
+    background-color: #333;
+    color: #fafafa;
+}
+
+/* Alignement des éléments du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Regroupement des champs Nom et Email côte à côte */
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Espace égal entre les champs */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+/* Groupement d'un champ de formulaire */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Chaque champ prend la même largeur */
+}
+
+/* Styles des champs de saisie */
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+/* Style du bouton */
+form button {
+    padding: 10px;
+    background-color: #c41111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a30e0e; /* Couleur un peu plus foncée au survol */
+}
+
+/* Responsivité : ajuster l'affichage sur les petits écrans */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column; /* Les champs se mettront en colonne sur petits écrans */
+    }
+
+    form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #333;
+        resize: none;
+    }
+}
