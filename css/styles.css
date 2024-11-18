@@ -6,115 +6,134 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e7e7e7, #d4d4d4);
+    color: #333;
     line-height: 1.6;
+    display: flex;
+    background-image: url('/photo/imagephoto.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-header {
-    background-color: #333;
-    padding: 1rem;
-    color: white;
-    text-align: center;
+/* Conteneur principal pour le contenu */
+.container {
+    flex: 1; /* Permet de prendre tout l’espace disponible entre le header et le footer */
+    display: flex;
+    align-items: center; /* Centre le contenu verticalement */
+    justify-content: center; /* Centre le contenu horizontalement */
 }
 
-nav ul {
-    list-style-type: none;
+/* Barre supérieure style Windows 11 */
+.win11-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.5rem 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.win11-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-nav ul li a {
-    color: white;
+.win11-header nav ul li {
+    margin: 0 1.5rem;
+}
+
+.win11-header nav ul li a {
     text-decoration: none;
+    color: #0078d7;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
 }
 
-footer {
+.win11-header nav ul li a:hover {
+    color: #005a9e;
+}
+
+/* Fenêtre principale */
+.win11-window {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 80%;
+    max-width: 1000px;
     text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
 }
 
 /* Section d'introduction */
 #intro {
-    text-align: center;
-    padding: 3rem;
-    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem;
+}
+
+/* Cercle pour la photo de profil */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem; /* Centre horizontalement et ajoute un espace en dessous */
+    border-radius: 50%;
+    overflow: hidden; /* Cache tout ce qui dépasse du cercle */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 3px solid #0078d7;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adapte l'image pour remplir le cercle */
+    display: block;
 }
 
 #intro h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 #intro p {
     font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-/* Section "À propos" */
-#about {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-#about .profile-img {
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-/* Section des projets */
-#projects {
-    padding: 2rem;
-    background-color: #f9f9f9;
-}
-
-.project {
-    margin-bottom: 2rem;
-}
-
-.project img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-/* Formulaire de contact */
-#contact {
-    padding: 2rem;
-    background-color: #f4f4f4;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    padding: 10px;
-    background-color: #333;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #0078d7, #005a9e);
     color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #005a9e, #004080);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer style Windows 11 */
+.win11-footer {
+    background-color: #f9f9f9;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    width: 100%;
 }
