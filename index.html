@@ -1,65 +1,260 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de John Smith, développeur web">
-    <title>Portfolio - John Smith</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-    body {
-      background-image: url('photo/imagephoto.png'); /* Remplacez 'image.jpg' par le chemin de votre image */
-      background-size: cover; /* Ajuste l'image pour couvrir toute la page */
-      background-position: center; /* Centre l'image */
-    }
-    </style>
-</head>
-<body>
-    <!-- Barre supérieure style Windows 11 -->
-    <header class="win11-header">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+	<head>
+		<title>Portfolio Cyber</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
 
-    <div class="social-links">
-        <a href="https://www.youtube.com" target="_blank" class="social-icon" id="youtube">
-            <img src="photo/youtube-app-white-icon.png" />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon" id="linkedin">
-            <img src="photo/2-20702_linkedin-logo-png-white-transparent-png.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.tiktok.com" target="_blank" class="social-icon" id="tiktok">
-            <img src="photo/tiktok-round-white-icon.png" alt="TikTok" />
-        </a>
-    </div>
-    
-    <!-- Conteneur principal -->
-    <div class="container">
-        <!-- Contenu principal -->
-        <div class="win11-window">
-            <!-- Section d'introduction -->
-            <section id="intro">
-                <!-- Photo de profil -->
-                <div class="profile-photo">
-                    <img src="photo/photojohn.png" alt="Photo de profil">
-                </div>
-                
-                <h1>Bonjour, je suis John Smith</h1>
-                <p>Développeur passionné par la création d'expériences numériques modernes.</p>
-                <a href="projects.html" class="btn">Voir mes projets</a>
-            </section>
-        </div>
-    </div>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
 
-    <!-- Footer style Windows 11 -->
-    <footer class="win11-footer">
-        <p>&copy; 2024 Guardia Recon Unit. Tous droits réservés.</p>
-    </footer>
-</body>
+			<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="index.html">Mathias</a></h1>
+						<span>portfolio</span>
+					</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li>
+								<a>Projets</a>
+								<ul>
+									<li><a href="projets/projet_1.html">Gestion des notes</a></li>
+									<li><a href="projets/projet_2.html">Système de réservation</a></li>
+									<li><a href="projets/projet_3.html">Application de gestion de projet</a></li>
+									<li><a href="projets/projet_4.html">Boutique en ligne </a></li>
+									<li><a href="projets/projet_5.html">Application de chat chiffré</a></li>
+									<li><a href="projets/projet_6.html">Dashboard de surveillance</a></li>
+									<li><a href="projets/projet_7.html">Gestionnaire de permissions </a></li>
+									<li><a href="projets/projet_8.html">Gestionnaire de cloud</a></li>											
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				</header>
+			</div>
+
+			<!-- Banner -->
+			<div id="banner-wrapper">
+				<div id="banner" class="box container">
+					<div class="row">
+						<div class="col-7 col-12-medium">
+							<h2>Bonjour, je m'appelle Mathias DE LAROCHE</h2>
+							<p>Développeur full stack avec une expertise en intégration de la sécurité dans les processus de développement logiciel. Passionné par la création d'applications robustes, évolutives et sécurisées, j'allie mes compétences en développement web, DevOps et sécurité informatique pour fournir des solutions complètes. Mon objectif est de garantir la qualité du code tout en respectant les normes de sécurité les plus strictes, de l'écriture du code à sa mise en production.</p>
+						</div>
+						<div class="col-5 col-12-medium">
+							<ul>
+								<li><a href="#" class="button large icon solid fa-arrow-circle-right">Mes projets</a></li>
+								<li><a href="#" class="button alt large icon solid fa-question-circle">Qui suis-je ?</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Features -->
+			<div id="features-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-12-medium">
+								<section class="box feature">
+									<a class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Langages et framework</h2>
+										<b>Langages de programmation</b>
+										<li>JavaScript (React, Node.js)</li>
+										<li>Python (Flask, Django)</li>
+										<li>Java (Spring Boot)</li>
+										<li>TypeScript</li>
+										<li>HTML/CSS, SASS, LESS</li>
+										<b>Frameworks et bibliothèques</b>
+										<li>React, Angular, Vue.js (Frontend)</li>
+										<li>Express.js (Backend)</li>
+										<li>Next.js (Full Stack)</li>
+										<b>Base de données</b>
+										<li>MongoDB, PostgreSQL, MySQL</li>
+										<li>Sécurisation des bases de données (cryptage, sauvegarde, audit des accès)</li>
+									</div>
+								</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+								<section class="box feature">
+									<a class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Sécurité</h2>
+										<b>DevSecOps</b>
+										<li>Intégration continue (CI/CD) avec Jenkins, GitLab CI, Travis CI</li>
+										<li>Sécurité des pipelines CI/CD (Scanners de vulnérabilités, tests de sécurité automatisés)</li>
+										<li>Automatisation de la gestion des secrets (Vault, AWS Secrets Manager)</li>
+										<li>Gestion de la configuration avec Terraform, Ansible</li>
+										<li>Docker, Kubernetes pour la containerisation et l'orchestration</li>
+										<li>Analyse de la sécurité des containers et des images Docker</li>
+										<b>Sécurité des réseaux</b>
+										<li>Sécurité des API (OAuth, JWT, OpenAPI, rate-limiting)</li>
+										<li>OWASP Top 10, et bonnes pratiques de sécurité</li>
+										<li>Tests de pénétration (pentesting) et analyse de vulnérabilité</li>
+										<li>Sécurisation des réseaux (firewalls, VPNs, segmentation)</li>
+												
+									</div>
+								</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+								<section class="box feature">
+									<a class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Cloud et collaboration</h2>
+										<b>Gestion cloud</b>
+										<li>AWS, Azure, Google Cloud Platform</li>
+										<li>Sécurisation des services cloud (IAM, gestion des permissions)</li>
+										<li>Infrastructure as Code (IaC)</li>
+										<b>Outils de collaboration et de gestion de projet</b>
+										<li>Git, GitHub, GitLab</li>
+										<li>JIRA, Trello, Asana</li>
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row gtr-200">
+						<div class="col-4 col-12-medium">
+
+							<!-- Sidebar -->
+							<div id="sidebar">
+								<section class="widget thumbnails">
+									<h3>Interesting stuff</h3>
+									<div class="grid">
+										<div class="row gtr-50">
+											<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a></div>
+										</div>
+									</div>
+									<a href="#" class="button icon fa-file-alt">More</a>
+								</section>
+							</div>
+
+						</div>
+
+						<div class="col-8 col-12-medium imp-medium">
+							<!-- Content -->
+							<div id="content">
+								<section class="last">
+									<h2>So what's this all about?</h2>
+									<p>This is <strong>Verti</strong>, a free and fully responsive HTML5 site template by <a href="http://html5up.net">HTML5 UP</a>.
+									Verti is released under the <a href="http://html5up.net/license">Creative Commons Attribution license</a>, so feel free to use it for any personal or commercial project you might have going on (just don't forget to credit us for the design!)</p>
+									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper bibendum ipsum, et tristique augue fringilla eu. Vivamus id risus vel dolor auctor euismod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. Aliquam luctus mattis lectus sit amet phasellus quam turpis.</p>
+									<a href="#" class="button icon solid fa-arrow-circle-right">Continue Reading</a>
+								</section>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Random Stuff</h3>
+								<ul class="style2">
+									<li><a href="#">Etiam feugiat condimentum</a></li>
+									<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+									<li><a href="#">Sed porttitor cras in erat nec</a></li>
+									<li><a href="#">Felis varius pellentesque potenti</a></li>
+									<li><a href="#">Nullam scelerisque blandit leo</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Random Stuff</h3>
+								<ul class="style2">
+									<li><a href="#">Etiam feugiat condimentum</a></li>
+									<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+									<li><a href="#">Sed porttitor cras in erat nec</a></li>
+									<li><a href="#">Felis varius pellentesque potenti</a></li>
+									<li><a href="#">Nullam scelerisque blandit leo</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Random Stuff</h3>
+								<ul class="style2">
+									<li><a href="#">Etiam feugiat condimentum</a></li>
+									<li><a href="#">Aliquam imperdiet suscipit odio</a></li>
+									<li><a href="#">Sed porttitor cras in erat nec</a></li>
+									<li><a href="#">Felis varius pellentesque potenti</a></li>
+									<li><a href="#">Nullam scelerisque blandit leo</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget contact last">
+								<h3>Contact Us</h3>
+								<ul>
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+								</ul>
+								<p>1234 Fictional Road<br />
+								Nashville, TN 00000<br />
+								(800) 555-0000</p>
+							</section>
+						</div>
+
+					</div>
+					
+					<div class="row">
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+
+	</body>
 </html>
