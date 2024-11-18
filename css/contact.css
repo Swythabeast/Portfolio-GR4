@@ -39,57 +39,6 @@ footer {
     color: white;
 }
 
-/* Section d'introduction */
-#intro {
-    text-align: center;
-    padding: 3rem;
-    background-color: #f4f4f4;
-}
-
-#intro h1 {
-    font-size: 3rem;
-}
-
-#intro p {
-    font-size: 1.2rem;
-}
-
-.btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-/* Section "À propos" */
-#about {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-#about .profile-img {
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-/* Section des projets */
-#projects {
-    padding: 2rem;
-    background-color: #f9f9f9;
-}
-
-.project {
-    margin-bottom: 2rem;
-}
-
-.project img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
 /* Section Contact*/
 #contact {
     padding: 2rem;
