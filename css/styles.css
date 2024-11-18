@@ -80,6 +80,28 @@ body {
     padding: 1rem;
 }
 
+/* Conteneur des icônes sociales */
+.social-links {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
 /* Cercle pour la photo de profil */
 .profile-photo {
     width: 150px;
