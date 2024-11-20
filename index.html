@@ -1,65 +1,257 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de John Smith, développeur web">
-    <title>Portfolio - John Smith</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-    body {
-      background-image: url('photo/imagephoto.png'); /* Remplacez 'image.jpg' par le chemin de votre image */
-      background-size: cover; /* Ajuste l'image pour couvrir toute la page */
-      background-position: center; /* Centre l'image */
-    }
-    </style>
-</head>
-<body>
-    <!-- Barre supérieure style Windows 11 -->
-    <header class="win11-header">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+	<head>
+		<title>Portfolio Cyber</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
 
-    <div class="social-links">
-        <a href="https://www.youtube.com" target="_blank" class="social-icon" id="youtube">
-            <img src="photo/youtube-app-white-icon.png" />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon" id="linkedin">
-            <img src="photo/2-20702_linkedin-logo-png-white-transparent-png.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.tiktok.com" target="_blank" class="social-icon" id="tiktok">
-            <img src="photo/tiktok-round-white-icon.png" alt="TikTok" />
-        </a>
-    </div>
-    
-    <!-- Conteneur principal -->
-    <div class="container">
-        <!-- Contenu principal -->
-        <div class="win11-window">
-            <!-- Section d'introduction -->
-            <section id="intro">
-                <!-- Photo de profil -->
-                <div class="profile-photo">
-                    <img src="photo/photojohn.png" alt="Photo de profil">
-                </div>
-                
-                <h1>Bonjour, je suis John Smith</h1>
-                <p>Développeur passionné par la création d'expériences numériques modernes.</p>
-                <a href="projects.html" class="btn">Voir mes projets</a>
-            </section>
-        </div>
-    </div>
+	<body class="is-preload homepage">
+		<div id="page-wrapper">
 
-    <!-- Footer style Windows 11 -->
-    <footer class="win11-footer">
-        <p>&copy; 2024 Guardia Recon Unit. Tous droits réservés.</p>
-    </footer>
-</body>
+			<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="index.html">Mathias</a></h1>
+						<span>portfolio</span>
+					</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li>
+								<a>Projets</a>
+								<ul>
+									<li><a href="projets/projet_1.html">Gestion des notes</a></li>
+									<li><a href="projets/projet_2.html">Système de réservation</a></li>
+									<li><a href="projets/projet_3.html">Application de gestion de projet</a></li>
+									<li><a href="projets/projet_4.html">Boutique en ligne</a></li>
+									<li><a href="projets/projet_5.html">Application de chat chiffré</a></li>
+									<li><a href="projets/projet_6.html">Dashboard de surveillance</a></li>
+									<li><a href="projets/projet_7.html">Gestionnaire de permissions </a></li>
+									<li><a href="projets/projet_8.html">Gestionnaire de cloud</a></li>											
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				</header>
+			</div>
+
+			<!-- Banner -->
+			<div id="banner-wrapper">
+				<div id="banner" class="box container">
+					<div class="row">	
+						<div class="col-7 col-12-medium">
+							<h2><img src="assets/images/profil.png" alt="" class="profile-image" /></h2>
+							<h2>Bonjour, je m'appelle Mathias</h2>
+							<h2>DE LAROCHE</h2>
+							<p>Développeur full stack avec une expertise en intégration de la sécurité dans les processus de développement logiciel. Passionné par la création d'applications robustes, évolutives et sécurisées, j'allie mes compétences en développement web, DevOps et sécurité informatique pour fournir des solutions complètes. Mon objectif est de garantir la qualité du code tout en respectant les normes de sécurité les plus strictes, de l'écriture du code à sa mise en production.</p>
+						</div>
+						<div class="col-5 col-12-medium">
+							<ul>
+								<li class="dropdown">
+									<li><a href="#" id="random-project" class="button large icon solid fa-arrow-circle-right" style="margin-top: 125px;">Mes projets</a></li>
+									<ul class="dropdown-content">
+										<li><a href="projets/projet_1.html">Projet 1 : Plateforme de Gestion des Notes Sécurisée</a></li>
+										<li><a href="projets/projet_2.html">Projet 2 : Système de Réservation de Rendez-vous Médical</a></li>
+										<li><a href="projets/projet_3.html">Projet 3 : Application de Gestion de Projet en Équipe</a></li>
+										<li><a href="projets/projet_4.html">Projet 4 : Boutique en Ligne Sécurisée</a></li>
+										<li><a href="projets/projet_5.html">Projet 5 : Application de Chat Crypté</a></li>
+										<li><a href="projets/projet_6.html">Projet 6 : Dashboard de Surveillance de la Sécurité</a></li>
+										<li><a href="projets/projet_7.html">Projet 7 : Gestionnaire de Permissions Sécurisé</a></li>
+										<li><a href="projets/projet_8.html">Projet 8 : Gestionnaire de Cloud Automatisé</a></li>
+									</ul>
+								</li>								
+								<li><a href="#features-wrapper" class="button alt large icon solid fa-question-circle">Compétences</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Parcours -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row gtr-200">
+						<div class="col-4 col-12-medium">
+
+							<!-- Sidebar -->
+							<div id="sidebar">
+								<section class="widget thumbnails">
+									<h3>Soft Skills</h3>
+									<div class="grid">
+										<div class="row gtr-50">
+											<div class="col-6"><a href="#" class="image fit"><img src="assets/images/pic04.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="assets/images/pic05.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="assets/images/pic06.jpg" alt="" /></a></div>
+											<div class="col-6"><a href="#" class="image fit"><img src="assets/images/pic07.jpg" alt="" /></a></div>
+										</div>
+									</div>
+									<a href="#" class="button icon fa-file-alt">More</a>
+								</section>
+							</div>
+
+						</div>
+
+						<div class="col-8 col-12-medium imp-medium">
+							<!-- Content -->
+							<div id="content">
+								<section class="last">
+									<h2>Mon parcours</h2>
+									<p>
+										Après avoir obtenu mon Master en Informatique et Sécurité des Systèmes à l’Université XYZ de Paris (2015-2018),
+										j’ai commencé ma carrière en tant que Développeur Web Full Stack chez la startup XYZ Solutions.
+										Là-bas, j’ai conçu des applications web sécurisées avec React.js et Node.js, en intégrant des pratiques de sécurité avancées
+										pour la gestion des bases de données et des réseaux.
+									</p>
+									<p>
+										Depuis 2020, je travaille chez ABC Technologies en tant que Développeur Full Stack et Spécialiste DevSecOps.
+										J’y développe des applications robustes en utilisant des technologies comme React.js, Node.js, Docker, et Kubernetes,
+										tout en mettant l’accent sur l'intégration de la sécurité dès la phase de développement. J’ai mis en place des pipelines
+										CI/CD automatisés avec des tests de sécurité, et j’assure la sécurisation des API avec OAuth et JWT. Grâce à ces expériences,
+										j’ai acquis une expertise dans la création d’applications sécurisées et évolutives, tout en garantissant une gestion optimisée
+										des ressources en production
+									</p>
+								</section>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Compétences -->
+			<div id="features-wrapper">
+				<h1 style="text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 20px;">Compétences</h1>
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-12-medium">
+							<section id="Compétences">
+								<section class="box feature">
+									<a class="image featured"><img src="assets/images/pic01.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Langages et framework</h2>
+										<b>Langages de programmation</b>
+										<li>JavaScript (React, Node.js)</li>
+										<li>Python (Flask, Django)</li>
+										<li>Java (Spring Boot)</li>
+										<li>HTML/CSS, SASS, LESS</li>
+										<b>Frameworks et bibliothèques</b>
+										<li>React, Angular, Vue.js (Frontend)</li>
+										<li>Express.js (Backend)</li>
+										<li>Next.js (Full Stack)</li>
+										<b>Base de données</b>
+										<li>MongoDB, PostgreSQL, MySQL</li>
+										<li>Sécurisation des bases de données (cryptage, sauvegarde, audit des accès)</li>
+									</div>
+								</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+								<section class="box feature">
+									<a class="image featured"><img src="assets/images/pic02.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Sécurité</h2>
+										<b>DevSecOps</b>
+										<li>Intégration continue (CI/CD) avec Jenkins, GitLab CI, Travis CI</li>
+										<li>Sécurité des pipelines CI/CD</li>
+										<li>Automatisation de la gestion des secrets (Vault, AWS Secrets Manager)</li>
+										<li>Analyse de la sécurité des containers et des images Docker</li>
+										<b>Sécurité des réseaux</b>
+										<li>Sécurité des API (OAuth, JWT, OpenAPI, rate-limiting)</li>
+										<li>Sécurisation des réseaux (firewalls, VPNs, segmentation)</li>
+												
+									</div>
+								</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+								<section class="box feature">
+									<a class="image featured"><img src="assets/images/pic03.jpg" alt="" /></a>
+									<div class="inner">
+										<h2>Cloud et collaboration</h2>
+										<b>Gestion cloud</b>
+										<li>AWS, Azure, Google Cloud Platform</li>
+										<li>Sécurisation des services cloud (IAM, gestion des permissions)</li>
+										<li>Infrastructure as Code (IaC)</li>
+										<b>Outils de collaboration et de gestion de projet</b>
+										<li>Git, GitHub, GitLab</li>
+										<li>JIRA, Trello, Asana</li>
+										<li>Notion (outil tout-en-un pour la gestion des projets, la documentation et la collaboration)</li>
+										<li>Slack (plateforme de communication d'équipe avec des discussions en temps réel)</li>
+									</div>
+								</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Les liens</h3>
+								<ul class="style2">
+									<li><a href="index.html">Accueil</a></li>
+									<li><a href="../index.html#Compétences">Compétences</a></li>
+									<li><a href="../contact.html">Contact</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget contact last">
+								<h3>Contactez-moi</h3>
+								<ul>
+									<li><a href="#"><span><img src="assets/images/x-logo.svg" alt="Logo du réseau X" class="logo-image" /></span></a></li>
+									<li><a href="#"><span><img src="assets/images/instagram-logo.svg" alt="Logo du réseau Instagram" class="logo-image" /></span></a></li>
+									<li><a href="#"><span><img src="assets/images/facebook-logo.svg" alt="Logo du réseau Facebook" class="logo-image" /></span></a></li>
+								</ul>
+								<p>
+									24 Terasse Bellini
+									Puteaux, 92
+									<a href="mailto:contact@guardian.com">contact@guardian.com</a>
+									<a href="tel:33600000000">+33600000000</a>
+								</p>
+							</section>
+						</div>
+
+					</div>
+					
+					<div class="row">
+						<div class="col-12">
+							<div id="copyright">
+								<il class="menu">
+									<li>&copy; Guardia Dev Unit. Tout droits réservé</li>
+								</il>	
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/menu.js"></script>
+
+	</body>
 </html>

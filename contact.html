@@ -1,23 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulaire de contact - [Ton Nom]">
-    <title>Contact - [Ton Nom]</title>
-    <link rel="stylesheet" href="css/contact.css">
-</head>
+	<head>
+		<title>Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="index.html">Mathias</a></h1>
+						<span>portfolio</span>
+					</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li>
+								<a>Projets</a>
+								<ul>
+									<li><a href="projets/projet_1.html">Gestion des notes</a></li>
+									<li><a href="projets/projet_2.html">Système de réservation</a></li>
+									<li><a href="projets/projet_3.html">Application de gestion de projet</a></li>
+									<li><a href="projets/projet_4.html">Boutique en ligne </a></li>
+									<li><a href="projets/projet_5.html">Application de chat chiffré</a></li>
+									<li><a href="projets/projet_6.html">Dashboard de surveillance</a></li>
+									<li><a href="projets/projet_7.html">Gestionnaire de permissions </a></li>
+									<li><a href="projets/projet_8.html">Gestionnaire de cloud</a></li>											
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+
+				</header>
+			</div>
 
     <section id="contact">
         <h2>Contactez-moi</h2>
@@ -38,13 +62,66 @@
                 <label for="message">Message :</label>
                 <textarea id="message" name="message" rows="5" required> </textarea>
             </div>
-    
+			
             <button type="submit">Envoyer</button>
         </form>
     </section>
     
-    <footer>
-        <p>&copy; 2024 John Smith. Tous droits réservés.</p>
-    </footer>    
-</body>
+   <!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget links">
+								<h3>Les liens</h3>
+								<ul class="style2">
+									<li><a href="index.html">Accueil</a></li>
+									<li><a href="../index.html#Compétences">Compétences</a></li>
+									<li><a href="/projets/projet_1.html">Projet-1</a></li>
+									<li><a href="../contact.html">Contact</a></li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-3 col-6-medium col-12-small">
+							<section class="widget contact last">
+								<h3>Contactez-moi</h3>
+								<ul>
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+								</ul>
+								<p>24 Terasse Bellini<br />
+								Puteaux, 92<br />
+								+33600000000</p>
+							</section>
+						</div>
+
+					</div>
+					
+					<div class="row">
+						<div class="col-12">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Guardia Dev Unit. Tout droits réserver</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+    </body>
+</html>
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.dropotron.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+	</body>
 </html>
