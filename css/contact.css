@@ -6,102 +6,134 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e7e7e7, #d4d4d4);
+    color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Barre de navigation (notch style) */
 header {
-    background-color: #333;
-    padding: 1rem;
-    color: white;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.5rem 0;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header nav ul li {
+    margin: 0 1.5rem;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
     text-decoration: none;
+    color: #0078d7;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
 }
 
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
+header nav ul li a:hover {
+    color: #005a9e;
 }
 
-/* Section Contact*/
-#contact {
+/* Section "À propos" */
+#about {
+    margin: 100px auto 2rem; /* Ajoute un espace pour éviter le chevauchement avec le header */
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     padding: 2rem;
-    background-color: #333;
-    color: #fafafa;
+    text-align: center;
 }
 
-/* Alignement des éléments du formulaire */
-form {
+#about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#about .profile {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-/* Regroupement des champs Nom et Email côte à côte */
-.form-row {
-    display: flex;
-    justify-content: space-between; /* Espace égal entre les champs */
-    gap: 20px; /* Espacement entre les éléments */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0078d7;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Groupement d'un champ de formulaire */
-.form-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Chaque champ prend la même largeur */
+.bio {
+    text-align: left;
+    color: #555;
 }
 
-/* Styles des champs de saisie */
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #333;
+.bio p {
+    margin-bottom: 1rem;
 }
 
-/* Style du bouton */
-form button {
-    padding: 10px;
-    background-color: #c41111;
-    color: #fff;
+.bio a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.bio a:hover {
+    color: #005a9e;
+}
+
+/* Boutons et liens */
+.btn {
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #0078d7, #005a9e);
+    color: white;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-form button:hover {
-    background-color: #a30e0e; /* Couleur un peu plus foncée au survol */
+.btn:hover {
+    background: linear-gradient(to right, #005a9e, #004080);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsivité : ajuster l'affichage sur les petits écrans */
-@media (max-width: 600px) {
-    .form-row {
-        flex-direction: column; /* Les champs se mettront en colonne sur petits écrans */
-    }
-
-    form textarea {
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #333;
-        resize: none;
-    }
+/* Footer */
+footer {
+    margin-top: auto;
+    background-color: #f9f9f9;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    width: 100%;
 }
