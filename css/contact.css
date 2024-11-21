@@ -1,107 +1,171 @@
-/* Styles de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Contact Page Styles */
+.contact-page {
+    min-height: 30vh;
+    padding: 120px 2rem 4rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-/* Section Contact*/
-#contact {
-    padding: 2rem;
-    background-color: #333;
-    color: #fafafa;
-}
-
-/* Alignement des éléments du formulaire */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
+.contact-container {
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    animation: slideUp 0.8s ease-out forwards;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding-right: 2rem;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    margin-bottom: 2rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
     padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Regroupement des champs Nom et Email côte à côte */
-.form-row {
+.contact-method:hover {
+    transform: translateX(10px);
+}
+
+.contact-method i {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-right: 1rem;
+}
+
+/* Social Links */
+.social-links {
     display: flex;
-    justify-content: space-between; /* Espace égal entre les champs */
-    gap: 20px; /* Espacement entre les éléments */
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-/* Groupement d'un champ de formulaire */
+.social-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Contact Form */
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
 .form-group {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Chaque champ prend la même largeur */
+    margin-bottom: 1.5rem;
 }
 
-/* Styles des champs de saisie */
-form input, form textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #333;
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
-/* Style du bouton */
-form button {
-    padding: 10px;
-    background-color: #c41111;
-    color: #fff;
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-color);
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-form button:hover {
-    background-color: #a30e0e; /* Couleur un peu plus foncée au survol */
+.submit-btn:hover {
+    background: #357abd;
+    transform: translateY(-2px);
 }
 
-/* Responsivité : ajuster l'affichage sur les petits écrans */
-@media (max-width: 600px) {
-    .form-row {
-        flex-direction: column; /* Les champs se mettront en colonne sur petits écrans */
+/* Animations */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
     }
 
-    form textarea {
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #333;
-        resize: none;
+    .contact-info {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .contact-method {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 }
