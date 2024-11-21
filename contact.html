@@ -3,48 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulaire de contact - [Ton Nom]">
-    <title>Contact - [Ton Nom]</title>
+    <title>Contact - Mathis Rochard</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="projects.html">Projets</a></li>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">✨ Mathis ROCHARD ✨</div>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="accueil.html#projets">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="contact">
-        <h2>Contactez-moi</h2>
-        <form action="mailto:votre-email@example.com" method="POST" enctype="multipart/form-data">
-            <div class="form-row">
+    <main class="contact-page">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contactez-moi 👋</h1>
+                <p>N'hésitez pas à me contacter pour discuter de vos projets !</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>mathis.rochard@email.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <span>06 89 09 79 56</span>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Paris, France</span>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
                 <div class="form-group">
-                    <label for="name">Nom :</label>
+                    <label for="name">Nom complet</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-    
                 <div class="form-group">
-                    <label for="email">Email :</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-            </div>
-    
-            <div class="form-group">
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required> </textarea>
-            </div>
-    
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-    
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer le message ✉️</button>
+            </form>
+        </div>
+    </main>
+
     <footer>
-        <p>&copy; 2024 John Smith. Tous droits réservés.</p>
-    </footer>    
+        <p>&copy; 2024 Mathis Rochard. Tous droits réservés. 🚀</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/trex.js"></script>
+    <script src="js/snow.js"></script>
 </body>
 </html>
