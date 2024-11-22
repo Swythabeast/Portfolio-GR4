@@ -1,19 +1,21 @@
-/* Global */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: var(--bg-light);
-    color: var(--text-dark);
+:root {
+    --primary-color: #2a2a2a;
+    --accent-color: #4a90e2;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --section-padding: 80px 0;
 }
 
-/* Project Detail */
-.project-detail {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: var(--text-light);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/* Global */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Dégradé gris-bleu */
+    font-family: 'Arial', sans-serif; /* Police uniforme */
+    margin: 0;
+    padding: 0;
 }
 
 /* Project Header */

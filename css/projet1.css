@@ -1,10 +1,21 @@
+:root {
+    --primary-color: #2a2a2a;
+    --accent-color: #4a90e2;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --section-padding: 80px 0;
+}
+
 /* Global */
 body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Dégradé gris-bleu */
+    font-family: 'Arial', sans-serif; /* Police uniforme */
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: var(--bg-light);
-    color: var(--text-dark);
-    
+    padding: 0;
 }
 
 /* Project Detail */
